@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>umd</title>
+</head>
+<body>
+<h1>umd</h1>
+<h2 style="color: red">请打开控制台查看输入结果</h2>
+
+<script src="./require.min.js"></script>
+<script>
+    window.requirejs.config({
+        paths: {
+            'lodash': 'https://unpkg.com/lodash@4.17.21/lodash'
+        }
+    })
+</script>
+
+<script src="./bundle.js"></script>
+<script>
+    window.requirejs(['myBundle'], (function (myBundle) {
+        myBundle.printModule()
+    }))
+</script>
+</body>
+</html>

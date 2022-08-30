@@ -1,0 +1,23 @@
+{
+  "name": "js-moduels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "rollup -c -w",
+    "start": "serve ."
+  },
+  "keywords": [
+    "js-modules"
+  ],
+  "author": "17hz",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^2.78.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "serve": "^14.0.1"
+  }
+}
